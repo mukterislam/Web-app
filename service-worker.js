@@ -1,14 +1,13 @@
-const CACHE_NAME = "my-pwa-cache-v1";
+const CACHE_NAME = "my-pwa-cache-v2"; // ভার্সন নাম একটু বদলে দিলাম যাতে নতুন করে আপডেট হয়
 
-// এখানে শুধু প্রধান ফাইলগুলোর নাম দিন যা অফলাইনেও দেখাতে চান
 const ASSETS_TO_CACHE = [
-    "/",
-    "/index.html",
-    "/style.css",
-    "/icons/icon-192.png",
-    "/icons/icon-512.png"
-    // আপনার যদি main.js বা অন্য কোনো জরুরি ফাইল থাকে, তা এখানে যোগ করুন
+    "./",
+    "./index.html",
+    "./style.css",
+    "./icons/icon-192.png",
+    "./icons/icon-512.png"
 ];
+
 
 // 1. Install Event: ব্রাউজারে ক্যাশ তৈরি করা
 self.addEventListener("install", (event) => {
